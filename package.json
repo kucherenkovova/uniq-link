@@ -1,0 +1,25 @@
+{
+  "name": "uniq-link",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "standard src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kucherenkovova/uniq-link.git"
+  },
+  "author": "kucherenkovova",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kucherenkovova/uniq-link/issues"
+  },
+  "homepage": "https://github.com/kucherenkovova/uniq-link#readme",
+  "devDependencies": {
+    "standard": "^7.1.0"
+  },
+  "dependencies": {
+    "randomstring": "^1.1.5"
+  }
+}
