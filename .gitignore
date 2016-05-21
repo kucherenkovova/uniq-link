@@ -1,1 +1,3 @@
-node_modules/ 
+/.idea
+/uniq-link.iml
+node_modules/
