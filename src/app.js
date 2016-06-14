@@ -10,7 +10,7 @@ if (!process.argv[3]) throw 'You must specify amount of unique links!'
 const FILENAME = process.argv[2]
 const AMOUNT = +process.argv[3]
 
-if (Number.isNaN(AMOUNT)) throw 'Second argument should be a number!'
+if (isNaN(Number(AMOUNT))) throw 'Second argument should be a number!'
 
 readLinksFromFile(path.join(process.cwd(), FILENAME))
   .then(generateRandomLinks)
