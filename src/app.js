@@ -8,7 +8,7 @@ if (!process.argv[2]) throw 'You must specify an input file!'
 if (!process.argv[3]) throw 'You must specify amount of unique links!'
 
 const FILENAME = process.argv[2]
-const AMOUNT = +process.argv[3]
+const AMOUNT = process.argv[3]
 
 if (isNaN(Number(AMOUNT))) throw 'Second argument should be a number!'
 
@@ -34,7 +34,7 @@ function randomizeLink (link) {
     [randomstring.generate(3)]: randomstring.generate(5),
     [randomstring.generate(2)]: randomstring.generate(4)
   }
-  return [link, '?', querystring.stringify(randomObj)].join('')
+  return `${link}?${querystring.stringify(randomObj)}`
 }
 
 function readLinksFromFile(file) {
